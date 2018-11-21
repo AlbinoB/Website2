@@ -1,0 +1,18 @@
+#headdiv{
+	position: absolute;
+	background-color: black;
+	top:0px;
+	background-size: 100% 100%;
+	width:1905px;
+	height:150px;
+
+}
+
+#footerdiv{
+	position: absolute;
+	top:800px;
+	background-size: 100% 100%;
+	background-color: black;
+	width:1905px;
+	height:150px;
+}

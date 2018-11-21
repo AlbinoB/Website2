@@ -1,0 +1,62 @@
+body{
+	background-repeat: no-repeat;
+	width:1885px;
+	height:948px;
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(C:/Users/complab/Desktop/albino/image/pastry.jpg);
+	background-size:100% 100% ; }
+
+.removefloat{
+	clear:both;
+}
+
+#maindiv{
+	padding-top: 35px;
+	border-radius: 10px;
+	float: right;
+	width: 850px;
+	height: 70px;
+	padding-left: 30px;
+
+	background-color: black;
+	opacity: .6;
+}
+.link{
+	padding-top: 30px;
+	padding-right:30px;
+	
+	color: red;
+	font-size:25px;
+	text-decoration: none;
+}
+
+#middle_text h3{
+	
+	position: absolute;
+	top:280px;
+	left:300px;
+	width:950px;
+	height:300px;
+	color:white;
+	font-size:45px;
+}
+
+#btn1{
+	border-radius: 15px;
+	border:2px white solid;
+	background-color: transparent;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top:740px;
+	left:850px;
+}
+#btn2{
+	border-radius: 15px;
+	border:2px white solid;
+	background-color: transparent;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top:740px;
+	left:700px;
+}
