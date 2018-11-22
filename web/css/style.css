@@ -2,8 +2,9 @@ body{
 	background-repeat: no-repeat;
 	width:1885px;
 	height:948px;
-	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(C:/Users/complab/Desktop/albino/image/pastry.jpg);
-	background-size:100% 100% ; }
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(../image/pastry.jpg);
+	background-size:100% 100% ; 
+}
 
 .removefloat{
 	clear:both;
@@ -60,3 +61,5 @@ body{
 	top:740px;
 	left:700px;
 }
+
+
