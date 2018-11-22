@@ -1,7 +1,27 @@
 #text_box{
-	padding:left;
-	height:10%;
-    width:10%;
-    align-items: center
+	position: absolute;
+	top: 20%;
+	left: 40%;
+	height: 70%;
+	width: 20%;
+	text-align: center;
+	background-color: #24526d;
+   border-radius: 10px;
 
+    
+
+}
+
+#center{
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	height: 60%;
+	width: 40%;
+	text-align: center;
+	
+}
+body{
+	background-color: #4cefcc;
+	background-color:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2))
 }
