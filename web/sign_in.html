@@ -17,18 +17,23 @@
   };
   firebase.initializeApp(config);
 </script>
+<script src=".\javascript\javaindex.js"></script>
 </head>
 <body>
 <div id="text_box">
 	<form>
     <div id="center">
 	<a href="#">
-	<img src="C:\Users\complab\Desktop\mca16\git\Website2\web\image\login_icon.png" alt="login image"><br>
+	<img src=".\image\login_icon.png" alt="login image"><br>
     </a>
-	 <input type="text" name="user name" placeholder="user name" style="background-color: #1a3b4f; color: white; padding-top: 10px;"><br>
-	<input type="text" name="password"  placeholder="password" style="background-color: #1a3b4f; color: white; padding-top: 10px;"><br>
-	<input type="submit" value="sign in" style="background-color: #24526d; color: white; padding-top: 10px;"><br>
-	<a href="#">Forget password</a><div>
+	 <input type="text" id="email" name="user name" placeholder="Email" ><br>
+	<input type="password" id="password" name="password"  placeholder="password" ><br>
+	<div id="btndiv">
+	<button id="sbtn" onclick="login()">sign in</button>
+	<button id="ubtn">sign up</button>
+	</div>
+	<br>
+	<a href="#" style="color:#4cefcc">Forget password</a><div>
 </form>
 </div>
 	
