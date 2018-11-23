@@ -1,26 +1,60 @@
 #text_box{
-	position: absolute;
-	top: 20%;
-	left: 40%;
-	height: 70%;
-	width: 20%;
+	margin-top:8%;
+	margin-left:auto;
+	margin-right:auto;
+	height: 500px;
+	width: 400px;
 	text-align: center;
 	background-color: #24526d;
-   border-radius: 10px;
-
-    
-
+    border-radius: 10px;
 }
 
 #center{
-	position: absolute;
-	top: 20%;
-	left: 20%;
-	height: 60%;
-	width: 40%;
-	text-align: center;
+	padding-top:85px;
+	margin-top:50 px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:none;
+	height: 400px;
+	width: 300px;
+	
 	
 }
+
+
+#center input{
+	background-color: #1a3b4f; 
+	color: white; 
+	margin-bottom:10px;
+	margin-top:10px;
+	padding-top: 10px;"
+	border-radius:10px;
+}
+
+#btndiv{
+	width:250px;
+	height:40px;
+}
+
+#sbtn{
+	color:white;
+	background-color:#4cefcc;
+	width:80px;
+	border-radius:15px;
+	margin-left:55px;
+	height:40px;
+	
+}
+
+#ubtn{
+	color:black;
+	border-radius:15px;
+	background-color:#fff;
+	width:80px;
+	height:40px;
+	
+}  
+
 body{
 	background-color: #4cefcc;
 	background-color:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2))
