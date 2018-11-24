@@ -57,6 +57,7 @@
      }
         function finalValidate()
         {
+		  validate();
           var count = 0;
           for(i=0;i<6;i++)
           {
@@ -67,7 +68,10 @@
           if(count == 6)
           	document.getElementById("errFinal").innerHTML = "All the data you entered is correct!!!";
 			else
+			{
+			
 			 return false;
+			 }
         }
    </script>
 </head>
@@ -75,19 +79,19 @@
 <div id="text_box" style="margin-top:40 px;">
 <form>
 <div id="center">
-<input id="first" onkeyup="validate();"  type="text"  name="user name" placeholder="first name" ><br>
+<input id="first"  type="text"  name="user name" placeholder="first name" ><br>
 <div id="errFirst"></div>
-<input id="last" onkeyup="validate();" type="text"  name="user name" placeholder="last name" ><br>
+<input id="last" type="text"  name="user name" placeholder="last name" ><br>
 <div id="errLast"></div>
-<input id="email" onkeyup="validate();" type="text"  name="user name" placeholder="e-mail" ><br>
+<input id="email"  type="text"  name="user name" placeholder="e-mail" ><br>
 <div id="errEmail"></div>
-<input id="uid" onkeyup="validate();" type="text"  name="user name" placeholder="user name" ><br>
+<input id="uid"  type="text"  name="user name" placeholder="user name" ><br>
 <div id="errUid"></div>
-<input id="password" onkeyup="validate();" type="text"  name="user name" placeholder="password" ><br>
+<input id="password"  type="text"  name="user name" placeholder="password" ><br>
 <div id="errPassword"></div>
-<input id="confirm" onkeyup="validate();" type="text"  name="user name" placeholder="confirm password"><br>
+<input id="confirm"  type="text"  name="user name" placeholder="confirm password"><br>
 <div id="errConfirm"></div>
-<button id="sbtn" onclick="validate();return finalValidate();">register</button>
+<input type="submit" id="sbtn" value="Register" onclick="return finalValidate();">
 <div id="errFinal"></div>
 </div>
 </form>
