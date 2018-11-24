@@ -102,20 +102,49 @@
 	position:absolute;
 	left:0px;
 	top:100%;
-	background-size: 100% 100%;
 	background-color: blue;
 	width:100%;
 	height:150%;
+	
 }
 
-#image_div2{
+.image_div2{
 	position:absolute;
 	left:0px;
-	top:250%;
+	top:100%;
 	background-size: 100% 100%;
 	background-color: yellow;
 	width:100%;
 	height:150%;
+	
+}
+
+#top{
+	position:absolute;
+	left:0px;
+	height:33%;
+	top:3%;
+	width:100%;
+	
+}
+
+
+#middle{
+	position:absolute;
+	left:0px;
+	height:33%;
+	top:36%;
+	width:100%;
+	
+}
+
+#below{
+	position:absolute;
+	left:0px;
+	height:33%;
+	top:68%;
+	width:100%;
+	
 }
 
 .image_box{
@@ -129,7 +158,8 @@
 	width:100%;
 	height:230px;
 }
-#image_div1 .image_box .image_sizing img{
+
+.image_box .image_sizing img{
 	
 	border-radius:15px;
 	background-size: 100% 100%;
@@ -143,5 +173,126 @@
 	font-size:20px;
 	width:100%;
 	height:70px;
+}
+
+
+#display_outer_image_div{
+	position:absolute;
+	left:0px;
+	top:100%;
+	background-size: 100% 100%;
+	background-color:none;
+	width:100%;
+	height:150%;
+	
+}
+
+.left_arrow{
+	font-size:30px;
+	position:absolute;
+	top:150%;
+	left:0%;
+	width:35px;
+	height:35px;
+	color:green;
+}
+
+.right_arrow{
+	font-size:30px;
+	position:absolute;
+	top:150%;
+	left:100%;
+	width:35px;
+	height:35px;
+	color:green;
+}
+
+#display_inner_image_div{
+	position:absolute;
+	left:0px;
+	top:0%;
+	background-size: 100% 100%;
+	background-color: none;
+	width:100%;
+	height:150%;
+}
+
+
+#top figure {
+	margin:0;
+	padding:0;
+	position:absolute;
+	width:100%;
+	left:0px;
+	text-align:left;
+	animation:20s sliderdivs infinite;
+}
+#middle figure {
+	margin:0;
+	padding:0;
+	position:absolute;
+	width:100%;
+	left:0px;
+	text-align:left;
+	animation:20s sliderdivs infinite;
+}
+#below figure {
+	margin:0;
+	padding:0;
+	position:absolute;
+	width:100%;
+	left:0px;
+	text-align:left;
+	animation:20s sliderdivs infinite;
+}
+
+#top figure div{
+	float:left;
+}
+#middle figure div{
+	float:left;
+}
+#below figure div{
+	float:left;
+}
+
+@keyframes sliderdivs{
+	
+	1% {
+		left:0%;
+	}
+	
+	0%{
+		left:0%;
+	}
+	20%{
+		left:0%;
+	}
+	
+	25%{
+		left:-100%;
+	}
+	
+	40%{
+		left:-100%;
+	}
+	
+	45%{
+		left:-200%;
+	}
+	65%{
+		left:-200%;
+	}
+	
+	70%{
+		left:-100%;
+	}
+	
+	90%{
+		left:-100%;
+	}
+	95%{
+		left:0%;
+	}
 }
 
