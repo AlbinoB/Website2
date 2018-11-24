@@ -87,15 +87,35 @@
 	height:10%;
 }
 
-
-#image_div{
+#image_div_main{
 	position:absolute;
 	left:0px;
 	top:100%;
 	background-size: 100% 100%;
 	background-color: blue;
 	width:100%;
-	height:100%;
+	height:150%;
+}
+
+
+#image_div1{
+	position:absolute;
+	left:0px;
+	top:100%;
+	background-size: 100% 100%;
+	background-color: blue;
+	width:100%;
+	height:150%;
+}
+
+#image_div2{
+	position:absolute;
+	left:0px;
+	top:250%;
+	background-size: 100% 100%;
+	background-color: yellow;
+	width:100%;
+	height:150%;
 }
 
 .image_box{
@@ -109,7 +129,7 @@
 	width:100%;
 	height:230px;
 }
-#image_div .image_box img{
+#image_div1 .image_box .image_sizing img{
 	
 	border-radius:15px;
 	background-size: 100% 100%;
@@ -124,3 +144,4 @@
 	width:100%;
 	height:70px;
 }
+
