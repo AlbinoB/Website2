@@ -1,6 +1,7 @@
 <!doctype html>
 <head>
 <link rel="stylesheet"  href="css\sign_in.css">
+
 <script type="text/javascript">
     var divs = new Array();
     divs[0] = "errFirst";
@@ -31,6 +32,7 @@
         var div = divs[i];
         if (inputs[i] == "")
         	document.getElementById(div).innerHTML = errMessage;
+			
         else if (i==2)
         {
           var atpos=inputs[i].indexOf("@");
@@ -64,6 +66,8 @@
           }
           if(count == 6)
           	document.getElementById("errFinal").innerHTML = "All the data you entered is correct!!!";
+			else
+			 return false;
         }
    </script>
 </head>
@@ -71,7 +75,7 @@
 <div id="text_box" style="margin-top:40 px;">
 <form>
 <div id="center">
-<input id="first" onkeyup="validate();" type="text"  name="user name" placeholder="first name" ><br>
+<input id="first" onkeyup="validate();"  type="text"  name="user name" placeholder="first name" ><br>
 <div id="errFirst"></div>
 <input id="last" onkeyup="validate();" type="text"  name="user name" placeholder="last name" ><br>
 <div id="errLast"></div>
@@ -83,7 +87,7 @@
 <div id="errPassword"></div>
 <input id="confirm" onkeyup="validate();" type="text"  name="user name" placeholder="confirm password"><br>
 <div id="errConfirm"></div>
-<button id="sbtn" onclick="validate();finalValidate();">register</button>
+<button id="sbtn" onclick="validate();return finalValidate();">register</button>
 <div id="errFinal"></div>
 </div>
 </form>
