@@ -1,3 +1,8 @@
+
+body{
+	overflow-x:hidden;
+}
+
 #headdiv{
 	position: absolute;
 	background-color: black;
@@ -24,9 +29,6 @@
 	width: 100%;
 	height:15%;
 }
-
-
-
 #middle_text{
 	position: absolute;
 	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(../image/pastry.jpg);
@@ -37,8 +39,6 @@
 	height:75%;
 	padding:none;
 }
-
-
 #middle_text h3{
 	
 	position: absolute;
@@ -49,7 +49,6 @@
 	color:#ffff99;
 	font-size:40px;
 }
-
 #btn1{
 	border-radius: 10px;
 	text-align:center;
@@ -76,7 +75,6 @@
 	top:73%;
 	left:52%;
 }
-
 #footerdiv{
 	position:absolute;
 	left:0px;
@@ -87,16 +85,6 @@
 	height:10%;
 }
 
-#image_div_main{
-	position:absolute;
-	left:0px;
-	top:100%;
-	background-size: 100% 100%;
-	background-color: blue;
-	width:100%;
-	height:150%;
-}
-
 
 #image_div1{
 	position:absolute;
@@ -105,19 +93,8 @@
 	background-color: blue;
 	width:100%;
 	height:150%;
-	
 }
 
-.image_div2{
-	position:absolute;
-	left:0px;
-	top:100%;
-	background-size: 100% 100%;
-	background-color: yellow;
-	width:100%;
-	height:150%;
-	
-}
 
 #top{
 	position:absolute;
@@ -127,8 +104,6 @@
 	width:100%;
 	
 }
-
-
 #middle{
 	position:absolute;
 	left:0px;
@@ -137,7 +112,6 @@
 	width:100%;
 	
 }
-
 #below{
 	position:absolute;
 	left:0px;
@@ -158,7 +132,6 @@
 	width:100%;
 	height:230px;
 }
-
 .image_box .image_sizing img{
 	
 	border-radius:15px;
@@ -176,17 +149,6 @@
 }
 
 
-#display_outer_image_div{
-	position:absolute;
-	left:0px;
-	top:100%;
-	background-size: 100% 100%;
-	background-color:none;
-	width:100%;
-	height:150%;
-	
-}
-
 .left_arrow{
 	font-size:30px;
 	position:absolute;
@@ -196,7 +158,6 @@
 	height:35px;
 	color:green;
 }
-
 .right_arrow{
 	font-size:30px;
 	position:absolute;
@@ -205,16 +166,6 @@
 	width:35px;
 	height:35px;
 	color:green;
-}
-
-#display_inner_image_div{
-	position:absolute;
-	left:0px;
-	top:0%;
-	background-size: 100% 100%;
-	background-color: none;
-	width:100%;
-	height:150%;
 }
 
 
@@ -295,4 +246,41 @@
 		left:0%;
 	}
 }
+
+/*maps div*/
+#maps_outer_div{
+	position:absolute;
+	left:0px;
+	top:250%;
+	background-color:black;
+	width:100%;
+	height:50%;
+	
+}
+
+#map_display{
+	background-color:gray;
+	margin:auto;
+	width:85%;
+	height:100%;
+}
+
+#go_to_maps_btn
+{
+	position:absolute;
+	margin;auto;
+	left:90%;
+	top:5%;
+	color:white;
+	background-color:#4cefcc;
+	width:80px;
+	border-radius:15px;
+	margin-left:55px;
+	height:40px;
+	
+}
+#go_to_maps_btn p{
+	text-decoration;none;
+}
+
 

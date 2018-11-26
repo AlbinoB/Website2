@@ -5,6 +5,22 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css\style2.css">
 	<title>welcome to the cake shop</title>
+	<script>
+// Initialize and add the map
+function initMap() {
+  // The location of mitcollege
+  var mitcollege = {lat: 18.5147717, lng: 73.8106272};
+  // The map, centered at mitcollege
+  var map = new google.maps.Map(
+      document.getElementById('map_display'), {zoom: 14.5, center: mitcollege});
+  // The marker, positioned at mitcollege
+  var marker = new google.maps.Marker({position: mitcollege, map: map});
+}
+    </script>
+	
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+    </script>
 </head>
 <body>
 	<div id="headdiv">
@@ -13,7 +29,7 @@
 		
 		<a href="#" class="link">HOME</a>
 		<a href=".\gallery123.html" class="link">GALLERY</a>
-		<a href="#" class="link">CONTACT</a>
+		<a href="#map_display" class="link">DIRECTION</a>
 		<a href="#" class="link">ABOUT</a>
 		<a href="#" class="link">EXPLORE MORE</a>
 		
@@ -145,7 +161,6 @@
 		</figure>
 		
 		</div>
-		
 		<!-- secoond row of images-->
 		<div id="middle">
 		<figure>
@@ -377,7 +392,17 @@
 		
 		
 	</div>
+	
+	
 
-
+	<div id="maps_outer_div" >
+	<a id="go_to_maps_btn" href='https://www.google.co.in/maps/search/MITSOM++,+Rambaug+Colony,+Kothrud,+Pune,+Maharashtra/@18.5147717,73.8106272,16z'><p>MAPS</p></a>
+			
+		<div id="map_display">
+			
+		
+			
+		</div>
+	</div>
 </body>
 </html>
