@@ -1,0 +1,125 @@
+body{
+background-color:white;
+}
+#main_div{
+	width:100%;
+	height:100%;
+	
+	
+}
+
+#image{
+	height:30%;
+	width:30%;
+}
+#note{
+	font-size:12px;
+	text-align:left;
+	  width: 30%;
+	  }
+#name{
+	font-size:50px;
+	position:absolute;
+	top:0%;
+	text-align:top;
+	padding-left:35%;
+}
+
+#ratings_123{
+	position:absolute;
+	z-index:2;
+	top:20%;
+	background-color:transparent;
+	left:30%;
+	width:100px;
+	height:40px;
+	text-align:left;
+	padding-left:90px;
+}
+
+	
+
+#review{
+	position:absolute;
+	z-index:2;
+	top:0%;
+	background-color:transparent;
+	left:40%;
+	width:100px;
+	height:40px;
+	text-align:left;
+	padding-left:200px; 
+}
+
+#line{
+	position:absolute;
+	top:25%;
+	left:35%;
+	padding-left:50%;
+	}
+
+	#product{
+		font-size:50px;
+	position:absolute;
+	top:25%;
+	text-align:top;
+	padding-left:35%;
+	}
+	
+	#list{
+		position:absolute;
+	top:40%;
+	text-align:top;
+	padding-left:35%;
+	}
+	
+	#price{
+		font-size:50px;
+	position:absolute;
+	top:40%;
+	text-align:top;
+	padding-left:35%;
+	}
+	
+	#weight{
+		position:absolute;
+	top:55%;
+	text-align:top;
+	padding-left:35%;
+	}	
+	
+	#buttons{
+	position:absolute;
+	top:62%;
+	left:35%;
+	text-align:left;
+	padding-left:10px;
+	}
+	
+	#radios{
+		position:absolute;
+	top:67%;
+	text-align:left;
+	padding-left:470px;
+	}
+	
+	#buy{
+		position:absolute;
+	top:72%;
+	left:40%;
+	text-align:center;
+	padding-left:50px;
+	padding-right:50px;
+	}
+	
+	#description{
+		position:absolute;
+	top:80%;
+	}
+	
+	#like{
+		position:absolute;
+	top:100%;
+	left:40%;
+	font-size:30px
+	}

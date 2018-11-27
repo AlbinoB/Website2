@@ -4,6 +4,7 @@ body{
 }
 
 #headdiv{
+	
 	position: absolute;
 	background-color: black;
 	top:0%;
@@ -12,6 +13,83 @@ body{
 	height:15%;
 	padding:none;
 }
+#main-nav{
+	z-index:1;
+	position: absolute;
+	background-color: black;
+	top:0%;
+	left:0px;
+	width:100%;
+	height:15%;
+	padding:none;
+	
+}
+
+#main-nav a:visited{
+	color:white;
+}
+
+#main-nav a h3:hover{
+	color:green;
+	text-align:center;
+}
+
+#main-nav h3{
+	padding-top:0px;
+	padding-left:0px;
+	float:left
+}
+
+#main-nav ul{
+	padding-top:0px;
+	padding-right:0px;
+	padding-left:0px;
+	list-style:none;
+}
+
+
+#main-nav ul li{
+	
+	width: 17%;
+	height:50px;
+	background-color:green;
+	opacity:.7;
+	padding-right:10px;
+	padding-left:30px;
+	text-align:center;
+	float:left;
+}
+
+
+#main-nav ul li a{
+	width: 0px;
+	height:30px;
+	text-decoration:none;
+	padding-top:20px;
+	color:white;
+	display:block;
+}
+#main-nav ul li a:hover{
+	background-color:blue;
+}
+#main-nav ul li ul li{
+	display:none;
+	
+}
+#main-nav ul li ul {
+	width: 110px;
+}
+
+
+#main-nav ul li:hover ul li{
+	
+	display: block;
+	
+}
+.removefloat1{
+	clear:both;
+}
+
 .link{
 	padding-top: 3%;
 	padding-right:3%;
@@ -20,8 +98,9 @@ body{
 	text-decoration: none;
 }
 #maindiv{
+	z-index:2;
 	left:0px;
-	background-color: green;
+	background-color: black;
 	padding-top:2%;
 	padding-bottom:2%;
 	border-radius: 10px;
