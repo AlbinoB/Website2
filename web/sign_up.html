@@ -1,7 +1,7 @@
 <!doctype html>
 <head>
 <link rel="stylesheet"  href="css\sign_in.css">
-
+<script src="pouchdb-7.0.0.min.js"></script>
 <script type="text/javascript">
     var divs = new Array();
     divs[0] = "errFirst";
@@ -10,6 +10,31 @@
     divs[3] = "errUid";
     divs[4] = "errPassword";
     divs[5] = "errConfirm";
+
+function check(){
+  var db = new PouchDB('register');
+
+
+      var inputs = new Array();
+      inputs[0] = document.getElementById('first').value;
+      inputs[1] = document.getElementById('last').value;
+      inputs[2] = document.getElementById('email').value;
+      inputs[3] = document.getElementById('uid').value;
+      inputs[4] = document.getElementById('password').value;
+      inputs[5] = document.getElementById('confirm').value;
+      var doc={
+      '_id':inputs[0],
+      'last':inputs[1],
+      'email':inputs[2],
+      'uid':inputs[3],
+      'password':inputs[4],
+      'confirm':inputs[5],
+};
+
+db.put(doc);
+
+}
+
     function validate()
 	{
       var inputs = new Array();
@@ -67,6 +92,7 @@
           }
           if(count == 6)
           	document.getElementById("errFinal").innerHTML = "All the data you entered is correct!!!";
+             check();
 			else
 			{
 			
