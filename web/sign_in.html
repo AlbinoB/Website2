@@ -2,38 +2,82 @@
 <html lang="en">
 <head>
   <link rel="stylesheet"  href="css\sign_in.css">
+  <script src="pouchdb-7.0.0.min.js"></script>
 	<meta charset="UTF-8">
-	<title>sign in</title>
-<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAXqkl39muUlKta88JvKSQMzF9oPx_m5UY",
-    authDomain: "test123-ac7c4.firebaseapp.com",
-    databaseURL: "https://test123-ac7c4.firebaseio.com",
-    projectId: "test123-ac7c4",
-    storageBucket: "test123-ac7c4.appspot.com",
-    messagingSenderId: "139035753850"
-  };
-  firebase.initializeApp(config);
+
+	<script type="text/javascript">
+	function check(){
+		var username=document.getElementById('email').value;
+		var pass=document.getElementById('password').value;
+		var usernamefound=0;
+		var passmatch=0;
+		 var db = new PouchDB('register');
+		 db.allDocs({
+          include_docs:true,
+        }).then(function(doc){
+        	
+
+            console.log(doc.rows);
+
+          });
+
+        if(usernamefound==1 && passmatch==1)
+        {
+        	console.log("login successful!!");
+        }
+        else
+        {
+        	console.log("failed!!!!!");	
+        }
+        var test=[{confirm: "a",
+email: "abc@gmail.com",
+last: "a",
+password: "a",
+uid: "abc@gmail.com",
+_id: "abc@gmail.com"}, {confirm: "n",
+email: "abc@gmail.com",
+last: "nn",
+password: "n",
+uid: "n",
+_id: "nn"}];
+        	var cookiearray= test.split(",");
+	for(var i=0;i<cookiearray.length;i++){
+		var cookarray1=cookiearray[i].split(",");
+		for(var j=0;j<cookiearray1.length;j++)
+		var key=cookiearray1[j].split(':')[0];
+		var value=cookiearray1[j].split(':')[1];
+		console.log(value);
+	}
+	}
 </script>
-<script src=".\javascript\javaindex.js"></script>
+
+	<title>Document</title>
 </head>
 <body>
 <div id="text_box">
+<h2 id="h2">Let's get you in</h2>
+<div id="image">
+<img src=".\image\login.png" alt="login image" style="border-radius:120px; width: 150px;height: 150px;">
+</div>
 	<form>
-    <div id="center">
-	<a href="#">
-	<img src=".\image\login_icon.png" alt="login image" style="border-radius:120px;"><br>
-    </a>
-	 <input type="text" id="email" name="user name" placeholder="Email" ><br>
-	<input type="password" id="password" name="password"  placeholder="password" ><br>
-	<div id="btndiv">
-	<button id="sbtn" onclick="login()">sign in</button>
-	<button id="ubtn">sign up</button>
+	<div id="center">
+		
+		 <input type="text" id="email" name="user name" placeholder="Email" ><br>
+		 <input type="password" id="password" name="password"  placeholder="password" ><br>
+	
+
 	</div>
+	<div id="btndiv">
+	<input type="button" id="sbtn" value="Sign in" onclick="check();" >
 	<br>
-	<a href="#" style="color:#4cefcc">Forget password</a><div>
+	<br>
+	<input type="button" id="ubtn" value="Sign Up" >
+	
+	<br>
+	<br>
+	<a href="#" style="color:white;">Forget password</a><div>
+	</div>
+	
 </form>
 </div>
 	
