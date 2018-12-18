@@ -1,0 +1,89 @@
+body{
+		background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(../image/cupcake-index_background.jpg);
+	    background-size:cover;
+	    background-repeat:no-repeat;
+
+}
+
+#text_box{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	height: 500px;
+	width: 400px;
+	text-align: center;
+	background-color: black;
+	opacity: .8;
+    border-radius: 10px;
+
+}
+
+#center{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	padding-top:85px;
+	margin-top:70px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:none;
+	height: 400px;
+	width: 300px;
+	border-radius:120px; 
+	
+	
+}
+#image{
+	z-index: 2;
+	position: absolute;
+	top:3%;
+	left:50%;
+	width: 130px;
+	height: 130px;
+	transform: translate(-50%,-50%);
+
+}
+
+
+#h3{
+	position: absolute;
+	top:20%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	border-bottom: 4px solid red;
+
+}
+#center input{ 
+	color: white; 
+	margin-bottom:10px;
+	margin-top:0px;
+	padding-top: 10px;
+	border:none;
+	background: none; 
+	border-bottom: 2px solid red;
+}
+
+
+
+#btndiv1{
+	position: absolute;
+	top:85%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width:250px;
+	height:40px;
+}
+
+#sbtn1{
+	color:white;
+	border:none;
+	background-color:red;
+	width:100%;
+	border-radius:15px;
+	height:40px;
+	
+}
+
