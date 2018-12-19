@@ -10,7 +10,7 @@ body{
 	top:50%;
 	left:50%;
 	transform: translate(-50%,-50%);
-	height: 500px;
+	height: 560px;
 	width: 400px;
 	text-align: center;
 	background-color: black;
@@ -21,7 +21,7 @@ body{
 
 #center{
 	position: absolute;
-	top:50%;
+	top:44%;
 	left:50%;
 	transform: translate(-50%,-50%);
 	padding-top:85px;
@@ -70,7 +70,7 @@ body{
 
 #btndiv1{
 	position: absolute;
-	top:85%;
+	top:93%;
 	left:50%;
 	transform: translate(-50%,-50%);
 	width:250px;
