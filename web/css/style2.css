@@ -53,7 +53,7 @@ body{
 	border-radius: 10px;
 	text-align:center;
 	border:3px white solid;
-	background-color: #4cefcc;
+	background-color: red;
 	color: white;
 	font-size: 20px;
 	width:150px;
@@ -260,19 +260,18 @@ body{
 #go_to_maps_btn
 {
 	position:absolute;
-	margin;auto;
 	left:90%;
 	top:5%;
 	color:white;
-	background-color:#4cefcc;
+	background-color:red;
 	width:80px;
 	border-radius:15px;
 	margin-left:55px;
 	height:40px;
 	
 }
-#go_to_maps_btn p{
-	text-decoration;none;
+#go_to_maps_btn a,p{
+	text-decoration:none;
 }
 
 #about_div{
