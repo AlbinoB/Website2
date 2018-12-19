@@ -49,6 +49,14 @@ _id: "nn"}];
 		console.log(value);
 	}
 	}
+ function signup(){
+ 	window.location.href="sign_up.html";
+ }
+
+ function signin(){
+ 	window.location.href="sign_in.html";
+ }
+
 </script>
 
 	<title>Document</title>
@@ -68,10 +76,10 @@ _id: "nn"}];
 
 	</div>
 	<div id="btndiv">
-	<input type="button" id="sbtn" value="Sign in" onclick="check();" >
+	<input type="submit" id="sbtn" value="Sign in" onclick="check();signin();" >
 	<br>
 	<br>
-	<input type="button" id="ubtn" value="Sign Up" >
+	<input type="submit" id="ubtn" value="Sign Up"  onclick="signup();">
 	
 	<br>
 	<br>
