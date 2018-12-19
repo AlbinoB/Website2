@@ -1,6 +1,7 @@
 
 body{
 	overflow-x:hidden;
+	z-index: 0;
 }
 
 
@@ -13,11 +14,11 @@ body{
 	width:100%;
 	height:15%;
 	padding:none;
-	float:left;
 }
 
 #maindiv{
 	left:0px;
+	z-index: 2;
 	background-color: black;
 	padding-top:2%;
 	padding-bottom:2%;
@@ -28,15 +29,14 @@ body{
 }  
 .link{
 	padding-top: 3%;
-	padding-right:3%;
 	color: white;
 	font-size:25px;
 	text-decoration: none;
-	z-index:1;
 }
 
 #main-nav{
-	z-index:1;
+	margin: auto;
+	z-index:20;
 	position: absolute;
 	background-color: black;
 	top:0%;
@@ -54,7 +54,7 @@ body{
 
 #main-nav a h3:hover{
 	color:black;
-	text-align:center;
+	margin: auto;
 	
 }
 
@@ -72,57 +72,54 @@ body{
 	padding-left:0px;
 	list-style:none;
 	
+	
+	
 }
 
 
-#main-nav ul li{
-	
-	width: 17%;
+#main-nav ul li {
+	margin-left: 50px;
+	float: left;
+	width: 200px;
 	height:50px;
 	background-color:black;
-	opacity:.7;
-	padding-right:10px;
-	padding-left:30px;
 	text-align:center;
-	float:left;
 
 }
-
 
 #main-nav ul li a{
-	width: 0px;
-	height:30px;
+	
 	text-decoration:none;
-	padding-top:20px;
 	color:white;
 	display:block;
-
 }
+
 #main-nav ul li a:hover{
-	background-color:blue;
-	
+	background-color: red;
 }
+
+
 #main-nav ul li ul li{
-		z-index:1;
+
 	display:none;
-	padding-right:80px;
-	background-color:red;
-	font-size:15px;
-
-	
 }
-#main-nav ul li ul {
-	width: 110px;
-
-}
-
 
 #main-nav ul li:hover ul li{
-	
-	display: block;
-	
-	
+
+	display:block;
 }
+
+
+#main-nav ul li ul {
+	
+	width:50px;
+
+}
+
+
+
+
+
 
 #middle_text{
 	position: absolute;
@@ -163,6 +160,12 @@ body{
 	text-decoration:none;
 	
 }
+
+
+#btn2 a{
+	color:white;
+	text-decoration:none;
+	}
 #btn2{
 	text-align:center;
 	width:150px;
@@ -366,7 +369,8 @@ body{
 	height:40px;
 	
 }
-#go_to_maps_btn a,p{
+#go_to_maps_btn p,a{
+
 	text-decoration:none;
 }
 
@@ -405,26 +409,22 @@ body{
 #image1{
 	position:absolute;
 	top:10%;
-	left:385px;
+	left:420px;
 }
 
 #image2{
 		top:10%;
 	position:absolute;
-	left:535px;
+	left:570px;
 }
 
 #image3{
 		top:10%;
 	position:absolute;
-	left:685px;
+	left:720px;
 }
 
-#image4{
-		top:10%;
-	    position:absolute;
-	    left:835px;
-}
+
 
 
 
@@ -469,4 +469,109 @@ body{
 #left_side li:nth-child(5){
 	background-color:red;
 }	
+}
+
+
+
+
+
+
+#a1{
+	position:absolute; top:4%; left:3%;
+}
+#a2{
+	position:absolute; top:4%; left:28%;
+}
+#a3{
+	position:absolute; top:4%; left:53%;
+}
+#a4{
+	position:absolute; top:4%; left:78%;
+}
+
+#a11{
+	position:absolute; top:36%; left:3%;
+}
+#a22{
+	position:absolute; top:36%; left:28%;
+}
+#a33{
+	position:absolute; top:36%; left:53%;
+}
+#a44{
+	position:absolute; top:36%; left:78%;
+}
+
+#a111{
+	position:absolute; top:68%; left:3%;
+}
+#a222{
+	position:absolute; top:68%; left:28%;
+}
+#a333{
+	position:absolute; top:68%; left:53%;
+}
+#a444{
+	position:absolute; top:68%; left:78%;
+}
+
+@media screen and (max-width: 1400px) {
+ 
+#a1{
+	position:absolute; top:4%; left:10%;
+}
+#a2{
+	position:absolute; top:4%; left:40%;
+}
+#a3{
+	position:absolute; top:4%; left:70%;
+}
+
+#a11{
+	position:absolute; top:36%; left:10%;
+}
+#a22{
+	position:absolute; top:36%; left:40%;
+}
+#a33{
+	position:absolute; top:36%; left:70%;
+}
+
+
+#a111{
+	position:absolute; top:68%; left:10%;
+}
+#a222{
+	position:absolute; top:68%; left:40%;
+}
+#a333{
+	position:absolute; top:68%; left:70%;
+}
+#a4{
+	display:none;
+}
+#a44
+{display:none;
+}
+#a444{
+	display:none;
+	overflow-x:hidden;
+}
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 900px) {
+  #a4{display:none;
+}
+  #a44{display:none;
+}
+#a444{display:none;
+}
+#a3{display:none;
+}
+#a33{display:none;
+}
+#a333{display:none;
+}
+
 }
