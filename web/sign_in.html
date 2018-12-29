@@ -7,7 +7,9 @@
 
 	<script type="text/javascript">
 	function check(){
-		var username=document.getElementById('email').value;
+		var doc1;
+		var i,j;
+		var emailentered=document.getElementById('email').value;
 		var pass=document.getElementById('password').value;
 		var usernamefound=0;
 		var passmatch=0;
@@ -15,46 +17,59 @@
 		 db.allDocs({
           include_docs:true,
         }).then(function(doc){
-        	
-
             console.log(doc.rows);
+            doc1=doc.rows;
+            console.log(doc1);
+            console.log(doc1[0].doc.email);
+            console.log(i);
+            for(i=0;i<doc1.length;i++)
+            {
+            	console.log(i);
+            	console.log(doc1[i].doc.email);
+            	console.log(doc1[i].doc.password);
+            	if(doc1[i].doc.email==emailentered && doc1[i].doc.password==pass)
+            	{
+            		usernamefound=1;
+            		j=i;
+            		passmatch=1;
+            	}
+            }
 
+	        if(usernamefound===1 && passmatch===1)
+	        {
+	        	console.log("login successful!!");
+	        	alert("login successful!!");
+	        	var ck="cookiename="+doc1[j].doc._id+';'
+				alert(ck);
+				document.cookie=ck;
+
+
+				var allcookies=document.cookie;
+				var cookiearray= allcookies.split(';');
+				for(var i=0;i<cookiearray.length;i++){
+					var key=cookiearray[i].split('=')[0];
+					var value=cookiearray[i].split('=')[1];
+				}
+				if(key=="cookiename")
+					{
+						alert("welcome"+value);
+					}
+
+	        	signin();
+	        }
+	        else
+	        {
+	        	console.log("failed!!!!!");	
+	        	alert("failed!!");
+	        }
           });
-
-        if(usernamefound==1 && passmatch==1)
-        {
-        	console.log("login successful!!");
-        }
-        else
-        {
-        	console.log("failed!!!!!");	
-        }
-        var test=[{confirm: "a",
-email: "abc@gmail.com",
-last: "a",
-password: "a",
-uid: "abc@gmail.com",
-_id: "abc@gmail.com"}, {confirm: "n",
-email: "abc@gmail.com",
-last: "nn",
-password: "n",
-uid: "n",
-_id: "nn"}];
-        	var cookiearray= test.split(",");
-	for(var i=0;i<cookiearray.length;i++){
-		var cookarray1=cookiearray[i].split(",");
-		for(var j=0;j<cookiearray1.length;j++)
-		var key=cookiearray1[j].split(':')[0];
-		var value=cookiearray1[j].split(':')[1];
-		console.log(value);
-	}
 	}
  function signup(){
  	window.location.href="sign_up.html";
  }
 
  function signin(){
- 	window.location.href="sign_in.html";
+ 	window.location.href="index.html";
  }
 
 </script>
@@ -76,7 +91,7 @@ _id: "nn"}];
 
 	</div>
 	<div id="btndiv">
-	<input type="submit" id="sbtn" value="Sign in" onclick="check();signin();" >
+	<input type="button" id="sbtn" value="Sign in" onclick="check();" >
 	<br>
 	<br>
 	<input type="submit" id="ubtn" value="Sign Up"  onclick="signup();">
