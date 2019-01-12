@@ -22,6 +22,34 @@ function initMap() {
 	<script async defer
     src="https://maps.googleapis.com/maps/api/js?callback=initMap">
     </script>
+
+<script src="pouchdb-7.0.0.min.js"></script>
+<script type="text/javascript">
+	function orderpage(indexval){
+		alert(indexval);
+		 var db3 = new PouchDB('clicked2');
+		 var click123={
+      	"_id":"indexval",
+      };
+		 db3.put(click123);
+		 orderpage123();
+/*
+		  var db1 = new PouchDB('orderdb');
+		 var order123={
+     "_id":"4",
+      	"name":"StrawBerry Cake",
+      	"price":"400"
+      };
+		 db1.put(order123);
+*/
+	}
+
+function orderpage123(){
+ 	window.location.href="order.html";
+ }
+</script>>
+
+
 </head>
 <body>
 	<div id="headdiv">
@@ -68,7 +96,7 @@ function initMap() {
 		<div id="top">
 		<figure>
 		<div id="a1" class="image_box" >
-			<div class="image_sizing">
+			<div class="image_sizing" onclick="orderpage('1');">
 				<img src="./image/1.jfif" alt="no image">
 			</div>	
 			<div class="image_desc">
@@ -78,7 +106,7 @@ function initMap() {
 		
 		
 		<div id="a2" class="image_box" >
-			<div class="image_sizing">
+			<div class="image_sizing" onclick="orderpage('2');">
 				<img src="./image/2.jpg" alt="no image">
 			</div>	
 			<div class="image_desc">
@@ -87,7 +115,7 @@ function initMap() {
 		</div>
 		
 		<div id="a3" class="image_box" >
-			<div class="image_sizing">
+			<div class="image_sizing" onclick="orderpage('3');">
 				<img src="./image/3.jfif" alt="no image">
 			</div>	
 			<div class="image_desc">
@@ -95,7 +123,7 @@ function initMap() {
 			</div>
 		</div>
 		<div id="a4" class="image_box" >
-			<div class="image_sizing">
+			<div class="image_sizing" onclick="orderpage('4');">
 				<img src="./image/4.jfif" alt="no image">
 			</div>	
 			<div class="image_desc">
