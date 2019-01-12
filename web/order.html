@@ -8,8 +8,54 @@
     color: orange;
 }
 </style>
+
+
+<script src="pouchdb-7.0.0.min.js"></script>
+<script type="text/javascript">
+	function orderpage(){
+		
+		var click1;
+		var order1;
+		var db = new PouchDB('clicked2');
+         db.allDocs({
+          include_docs:true,
+        }).then(function(doc){
+        	doc1=doc.rows;
+        	click1=doc1[0].doc._id;
+        	console.log("mmmmmmmmmmmmmmm");
+            console.log(click1);
+          });
+
+
+
+
+		 var db12 = new PouchDB('orderdb');
+		 db12.allDocs({
+          include_docs:true,
+        }).then(function(doc){
+            console.log(doc.rows);
+            doc1=doc.rows;
+            for(i=0;i<doc1.length;i++)
+            {
+            	console.log(i);
+            	console.log(doc1[i].doc.price);
+            	console.log(doc1[i].doc.name);
+            	if(doc1[i].doc._id==click1)
+            	{
+            		alert("match");
+            		document.getElementById("price").innerHTML='Rs.'+doc1[i].doc.price;
+            		document.getElementById("name").innerHTML=doc1[i].doc.name;
+            	}
+            }
+             });
+
+	}
+
+</script>
+
+
 </head>
-<body>
+<body onload="orderpage()">
 <div id="main_div">
 <img id="image" src=".\image\1.jfif" alt="cake image">
 <p id="note">NOTE: The icing, design of the cake may vary from the image depending upon local availability.</p>
